@@ -1,17 +1,11 @@
 User-agent: *
 Allow: /
-Allow: /#about
-Allow: /#projects
-Allow: /#skills
-Allow: /#contact
+
+# Блокируем служебные пути
 Disallow: /api/
 Disallow: /admin/
 Disallow: /private/
+Disallow: /tmp/
 
-Crawl-delay: 1
-
-# Sitemaps
+# Указываем правильный sitemap
 Sitemap: https://portfolio-hazel-rho-80.vercel.app/sitemap.xml
-
-# SEO directives
-Host: https://portfolio-hazel-rho-80.vercel.app
